@@ -82,6 +82,9 @@ body {
     background: url(../images/heart!.svg) no-repeat center;
 
 }
+.navigation-search {
+  background:url(../images/search!.svg) no-repeat center;
+    }
 .navigation-favor::before {
     content: "12";
     position: absolute;
@@ -91,7 +94,7 @@ body {
     background-color: #7DB54F;
     font-size: 10px;
     line-height: 10px;
-    color: #ffffff;
+    color: #030202;
     border-radius: 50%;
 }
 .navigation-link:not(.button) {
@@ -103,9 +106,6 @@ body {
     text-decoration: none;
     color: #030303; }
 
-.navigation-search {
-        background: url(../images/search!.svg) no-repeat center;
-    }
     .navigation-user {
         display: flex;
         justify-content: end;
