@@ -157,7 +157,6 @@ body {
     text-align: center;
     text-decoration: none;
 }
-
 .wellcome {
     margin: 0 auto;
     width: 460px;
@@ -507,6 +506,9 @@ body {
     height: 40px;
 }
 
+.social-item:hover{
+  background-color: red;
+}
 /*
 catolog.html
 */
@@ -621,7 +623,7 @@ color: #000;
     justify-content: space-between;
 }
 
-.select-control {
+  .select-control {
     font-family: 'PT Sans';
     font-size: 18px;
     line-height: 21px;
@@ -659,6 +661,7 @@ color: #000;
 }
 
 .hotel-cards {
+    padding: 20px;
     width: 340px;
     list-style-type: none;
     border: 1px solid #E6E6E6;
@@ -680,7 +683,7 @@ color: #000;
 }
 
 .button-detail {
-    color: #FFFFFF;
+    color: #ffffff;
     display: block;
     font-size: 16px;
     line-height: 20px;
@@ -713,7 +716,7 @@ color: #000;
 
 .button-green {
     display: block;
-    color: inherit;
+    color: #FFFFFF;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
