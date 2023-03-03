@@ -9,44 +9,40 @@
 
   <body>
     <div class="container">
-    <header class="page-header">
-      <div style="display: flex;">
-        <a class="logo" href="index.html">
-          <img class="page-header-logo" src="images/logo!!.svg" width="140" height="70"
-            alt="Логотип «Седона-небольшой городок в Аризоне».">
-        </a>
+      <header class="page-header">
         <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+          <a class="logo" href="index.html">
+            <img class="page-header-logo" src="images/logo!!.svg" width="140" height="70"
+              alt="Логотип «Седона-небольшой городок в Аризоне».">
+          </a>
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a class="navigation-link " href="index.html">Главная</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">О Седоне</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+              </li>
+            </ul>
+            <ul class="navigation-list navigation-user">
+            <li class="navigaton-item">
+              <a class="navigation-link navigation-search" href="#">
+                <span class="visually-hidden">Поиск.</span>
+              </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">О Седоне</a>
+            <li class="navigaton-item navigation-favor">
+              <a class="navigation-link " href="#">
+                <span class="visually-hidden">Избранное.</span>
+              </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <li class="navigaton-item">
+              <a class="navigation-link button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
-      </div>
-      <nav>
-        <ul class="navigation-list navigation-user">
-          <li class="navigaton-item">
-            <a class="navigation-link navigation-search" href="#">
-              <span class="visually-hidden">Поиск.</span>
-            </a>
-          </li>
-          <li class="navigaton-item navigation-favor">
-            <a class="navigation-link " href="#">
-              <span class="visually-hidden">Избранное.</span>
-            </a>
-          </li>
-          <li class="navigaton-item">
-            <a class="navigation-link button" href="#">Хочу сюда!</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      </header>
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -107,11 +103,11 @@
                 </li>
               </ul>
             </fieldset>
-            <legend class="catalog-filter-title">Стоимость,₽:</legend>
-            <form>
+            <fieldset class="catalog-form" >
+              <legend class="catalog-filter-title">Стоимость,₽:</legend>
               <input type="number" placeholder="0">
               <input type="number" placeholder="9000">
-            </form>
+            </fieldset>
             <div class="button-group">
               <button class="button-use" type="submit">Применить</button>
               <button class="button-reset" type="reset">Сбросить</button>
@@ -143,17 +139,11 @@
               alt="Вид из пещеры на звездное небо">
             <h3 class="hotel-card-title">Amara Resort& Spa</h3>
           </a>
-          <div class="hotel-about">
             <p class="hotel-card">гостиница</p>
             <p class="hotel-card-price">от 4000 ₽</p>
-          </div>
-          <div class="hotel-button">
             <a class="hotel-card-button button-detail" href="#">подробнее</a>
             <a class="hotel-card-button button-select" href="#">в избранное</a>
-          </div>
-          <div class="hotel">
-            <img class="hotel-reiting" src="images/zevvv.svg" width="140" height="37" alt="Четыре звезды">
-          </div>
+          <img class="hotel-reiting" src="images/zevvv.svg" width="140" height="37" alt="Четыре звезды">
           <p class="rating">рейтинг: 8,5</p>
         </li>
         <li class="hotel-cards">
@@ -161,17 +151,11 @@
             <img class="hotel-card-image" src="images/hotel-2.jpg" width="300" height="212" alt="Горы на закате">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
-          <div class="hotel-about">
             <p class="hotel-card">гостиница</p>
             <p class="hotel-card-price">от 5000 ₽</p>
-          </div>
-          <div class="hotel-button">
             <a class="hotel-card-button button-detail" href="#">подробнее</a>
             <a class="hotel-card-button button-green" href="#">в избранном</a>
-          </div>
-          <div>
             <img class="hotel-reiting" src="images/zevvv.svg" width="140" height="37" alt="Четыре звезды">
-          </div>
           <p class="rating">рейтинг: 9,2</p>
         </li>
         <li class="hotel-cards">
@@ -179,17 +163,11 @@
             <img class="hotel-card-image" src="images/hotel-3.jpg" width="300" height="212" alt="Горы и солнце">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
-          <div class="hotel-about">
             <p class="hotel-card">гостиница</p>
             <p class="hotel-card-price">от 2500 ₽</p>
-          </div>
-          <div class="hotel-button">
             <a class="hotel-card-button button-detail" href="#">подробнее</a>
             <a class="hotel-card-button button-select" href="#">в избранное</a>
-          </div>
-          <div>
             <img class="hotel-reiting" src="images/zev3.svg" width="140" height="37" alt="Три звезды">
-          </div>
           <p class="rating">рейтинг: 6,9</p>
         </li>
         <li class="hotel-cards">
@@ -197,17 +175,11 @@
             <img class="hotel-card-image" src="images/hotel-4.jpg" width="300" height="212" alt="Горы ночью">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
-          <div class="hotel-about">
             <p class="hotel-card">гостиница</p>
             <p class="hotel-card-price">от 1500 ₽</p>
-          </div>
-          <div class="hotel-button">
             <a class="hotel-cardbutton button-detail" href="#">подробнее</a>
             <a class="hotel-card-button button-select" href="#">в избранное</a>
-          </div>
-          <div>
             <img class="hotel-reiting" src="images/zev2.svg" width="140" height="37" alt="Две звезды">
-          </div>
           <p class="rating">рейтинг: 5,0</p>
         </li>
       </ul>
