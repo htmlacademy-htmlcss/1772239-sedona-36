@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+html{
+  height: 100%;
+}
 
 @font-face {
     font-family: "PT Sans";
@@ -25,6 +28,7 @@ body {
     color: #333333;
     background-color: #F2F2F2;
     margin: 0;
+    height: 100%;
 }
 
 .container {
@@ -177,6 +181,9 @@ body {
     margin: 0 auto;
     width: 460px;
 }
+.main-index{
+  flex-grow: 1;
+}
 
 .gorgeous {
 
@@ -216,9 +223,7 @@ body {
     text-align: center;
     font-size: 22px;
     line-height: 26px;
-    padding-left: 275px;
     padding-bottom: 69px;
-    padding-right: 275px;
 }
 
 .advantages-tex {
@@ -277,8 +282,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   padding-top: 102px;
-  padding-left: 113px;
-  padding-right: 113px;
+  padding-left: 114px;
+  padding-right: 114px;
 }
 
 .advantages-item:nth-child(n +2):nth-child(-n+ 4) .advantages-title
@@ -459,6 +464,9 @@ background-color: rgba(0, 0, 0, 0.3);}
 }
 
 .newsletter-information {
+    margin-left: auto;
+    margin-right: auto;
+    width: 475px;
     color: #FFFFFF;
     font-size: 22px;
     line-height: 26px;
@@ -694,31 +702,54 @@ color: #000;
 }
 
 .hotel-card {
+  margin: 0;
     text-transform: capitalize;
 }
 
 .hotel-cards {
-    padding: 20px;
-    width: 340px;
-    list-style-type: none;
-    border: 1px solid #E6E6E6;
-    margin-left: 70px;
-    margin-top: 40px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+  width: 340px;
+  height: 438px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  column-gap: 20px;
+  row-gap: 16px;
+  justify-items: start;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .hotel-card-title {
-    color: #000000;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 700;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  display: inline-block;
+  margin: 0;
+  text-transform: none;
+  color: #000000;
 
 }
 .hotel-card-link{
+  display: block;
+  grid-column: 1/-1;
+  margin: 0;
+  padding: 0;
+  text-align: left;
   text-decoration: none;
 }
-
+.hotel-card-image{
+  display: block;
+  margin-bottom: 16px;
+}
+.hotel-reiting{
+  margin: 0;
+  margin-bottom: 20px;
+}
+.hotel-card-price{
+  margin: 0;
+  justify-self: end;
+}
 .button-detail {
     color: #ffffff;
     display: block;
@@ -764,10 +795,12 @@ color: #000;
     width: 140px;
     min-height: 36px;
     text-align: center;
-    padding: 8px 20px;
+    padding: 8px 10px;
 }
 
 .rating {
+  margin: 0;
+  margin-bottom: 20px;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
